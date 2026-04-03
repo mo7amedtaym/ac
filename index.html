@@ -1,175 +1,269 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>تصليح تكييف الكويت | فني تكييف 24 ساعة | Techno Volt</title>
+    <title>تصليح تكييف الكويت | فني تكييف 24 ساعة | Techno Volt</title>
 
-<meta name="description" content="أفضل فني تصليح تكييف في الكويت - صيانة تكييف مركزي وسبلت بخبرة 25 سنة. خدمة 24 ساعة في الفروانية، حولي، السالمية. اتصل الآن.">
+    <meta name="description" content="أفضل فني تصليح تكييف في الكويت - صيانة تكييف مركزي وسبلت بخبرة 25 سنة.">
 
-<style>
-body {margin:0;font-family:Tahoma;background:#f5f7fa;}
+    <style>
+        body {
+            margin: 0;
+            font-family: Tahoma;
+            background: #f5f7fa;
+        }
 
-/* HERO */
-.hero {
-background:linear-gradient(rgba(13,26,44,0.9),rgba(13,26,44,0.9)),
-url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
-color:white;text-align:center;padding:90px 20px;
-}
+        /* HERO */
+        .hero {
+            position: relative;
+            background: url('background.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
 
-.logo {width:110px;}
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 26, 44, 0.85);
+            backdrop-filter: blur(3px);
+        }
 
-h1 {font-size:38px}
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
 
-/* BUTTON */
-.btn {background:#F06B00;color:white;padding:12px 25px;text-decoration:none;border-radius:6px;}
+        .logo {
+            width: 110px;
+        }
 
-.whatsapp-big {
-display:inline-flex;align-items:center;gap:10px;
-background:#25D366;color:white;
-padding:15px 30px;font-size:18px;
-border-radius:10px;
-text-decoration:none;
-margin-top:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-animation:shake 2s infinite;
-}
+        h1 {
+            font-size: 38px
+        }
 
-/* SECTIONS */
-.section {padding:40px;text-align:center;}
+        /* BUTTON */
+        .btn {
+            background: #F06B00;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
 
-.box {
-display:inline-block;width:260px;
-background:white;margin:10px;padding:20px;
-border-radius:10px;
-}
+        .whatsapp-big {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: shake 2s infinite;
+        }
 
-/* TESTIMONIALS */
-.testimonial {
-background:white;
-margin:10px;
-padding:15px;
-border-radius:10px;
-}
+        /* SECTIONS */
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
 
-/* FLOAT */
-.whatsapp {
-position:fixed;
-bottom:20px;right:20px;
-background:#25D366;
-padding:15px;border-radius:50%;
-animation:pulse 1.5s infinite;
-}
+        /* SERVICES WITH IMAGES */
+        .box {
+            display: inline-block;
+            width: 260px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
 
-/* ANIMATION */
-@keyframes shake {
-0%{transform:rotate(0)}
-25%{transform:rotate(-5deg)}
-50%{transform:rotate(5deg)}
-75%{transform:rotate(-5deg)}
-100%{transform:rotate(0)}
-}
+        .box:hover {
+            transform: translateY(-5px);
+        }
 
-@keyframes pulse {
-0%{transform:scale(1)}
-50%{transform:scale(1.15)}
-100%{transform:scale(1)}
-}
-</style>
+        .box img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .box-content {
+            padding: 15px;
+        }
+
+        /* TESTIMONIALS */
+        .testimonial {
+            background: white;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* FLOAT */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            padding: 15px;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* ANIMATION */
+        @keyframes shake {
+            0% {
+                transform: rotate(0)
+            }
+
+            25% {
+                transform: rotate(-5deg)
+            }
+
+            50% {
+                transform: rotate(5deg)
+            }
+
+            75% {
+                transform: rotate(-5deg)
+            }
+
+            100% {
+                transform: rotate(0)
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.15)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-<img src="logo.png" class="logo">
-<h1>Techno Volt</h1>
-<p>تصليح تكييف الكويت | فني تكييف 24 ساعة</p>
-<p>خبرة 25 سنة في التكييف المركزي والسبلت</p>
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
 
-<a href="tel:96550720240" class="btn">📞 اتصال الآن</a><br>
+            <img src="logo.png" class="logo">
 
-<a href="https://wa.me/96550720240?text=السلام عليكم اريد تصليح تكييف" class="whatsapp-big">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24">
-احجز عبر واتساب الآن
-</a>
-</div>
+            <h1>Techno Volt</h1>
+            <p>تصليح تكييف الكويت | فني تكييف 24 ساعة</p>
+            <p>خبرة 25 سنة في التكييف المركزي والسبلت</p>
 
-<!-- SERVICES -->
-<div class="section">
-<h2>خدماتنا</h2>
+            <a href="tel:96550720240" class="btn">📞 اتصال الآن</a><br>
 
-<div class="box">
-<h3>تصليح تكييف مركزي</h3>
-<p>حل جميع الأعطال بسرعة</p>
-</div>
+            <a href="https://wa.me/96550720240?text=السلام عليكم اريد تصليح تكييف" class="whatsapp-big">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24">
+                تواصل عبر واتساب الآن
+            </a>
 
-<div class="box">
-<h3>صيانة تكييف سبلت</h3>
-<p>تنظيف + تعبئة فريون</p>
-</div>
+        </div>
+    </div>
 
-<div class="box">
-<h3>تركيب مكيفات</h3>
-<p>تركيب احترافي مضمون</p>
-</div>
-</div>
+    <!-- SERVICES -->
+    <div class="section">
+        <h2>خدماتنا</h2>
 
-<!-- AREAS (SEO قوي جدًا) -->
-<div class="section">
-<h2>نخدم جميع مناطق الكويت</h2>
-<p>
-        نحن في Techno Volt نقدم خدمات تصليح وصيانة التكييف في الكويت
-        بخبرة تتجاوز 25 عام في مجال التكييف المركزي والسبلت.
-        نمتلك فريق فني متخصص قادر على حل جميع مشاكل التكييف بسرعة وكفاءة عالية.
-</p>
-<p>
-الفروانية - حولي - السالمية - الجهراء - الأحمدي - العاصمة
-</p>
-</div>
+        <div class="box">
+            <img src="3.png">
+            <div class="box-content">
+                <h3>تصليح تكييف مركزي</h3>
+                <p>حل جميع الأعطال بسرعة</p>
+            </div>
+        </div>
 
-<!-- TRUST -->
-<div class="section">
-<h2>لماذا Techno Volt؟</h2>
-<p>✔ خبرة 25 سنة</p>
-<p>✔ خدمة 24 ساعة</p>
-<p>✔ وصول سريع</p>
-<p>✔ أسعار منافسة</p>
-</div>
+        <div class="box">
+            <img src="2.png">
+            <div class="box-content">
+                <h3>صيانة تكييف سبلت</h3>
+                <p>تنظيف + تعبئة فريون</p>
+            </div>
+        </div>
 
-<!-- TESTIMONIALS -->
-<div class="section">
-<h2>آراء العملاء</h2>
+        <div class="box">
+            <img src="1.png">
+            <div class="box-content">
+                <h3>تركيب مكيفات</h3>
+                <p>تركيب احترافي مضمون</p>
+            </div>
+        </div>
 
-<div class="testimonial">
-⭐⭐⭐⭐⭐ ممتاز وسريع جدًا
-</div>
+    </div>
 
-<div class="testimonial">
-⭐⭐⭐⭐⭐ أفضل فني تكييف بالكويت
-</div>
+    <!-- AREAS -->
+    <div class="section">
+        <h2>نخدم جميع مناطق الكويت</h2>
+        <p>
+            نحن في Techno Volt نقدم خدمات تصليح وصيانة التكييف في الكويت
+            بخبرة تتجاوز 25 عام في مجال التكييف المركزي والسبلت.
+            نمتلك فريق فني متخصص قادر على حل جميع مشاكل التكييف بسرعة وكفاءة عالية.
+        </p>
+        <p>
+            الفروانية - حولي - السالمية - الجهراء - الأحمدي - العاصمة
+        </p>
+    </div>
 
-<div class="testimonial">
-⭐⭐⭐⭐⭐ خدمة احترافية وأسعار مناسبة
-</div>
+    <!-- TRUST -->
+    <div class="section">
+        <h2>لماذا Techno Volt؟</h2>
+        <p>✔ خبرة 25 سنة</p>
+        <p>✔ خدمة 24 ساعة</p>
+        <p>✔ وصول سريع</p>
+        <p>✔ أسعار منافسة</p>
+    </div>
 
-</div>
+    <!-- TESTIMONIALS -->
+    <div class="section">
+        <h2>آراء العملاء</h2>
 
-<!-- FINAL CTA -->
-<div class="section">
-<h2>لا تنتظر - احجز الآن</h2>
+        <div class="testimonial">⭐⭐⭐⭐⭐ ممتاز وسريع جدًا</div>
+        <div class="testimonial">⭐⭐⭐⭐⭐ أفضل فني تكييف بالكويت</div>
+        <div class="testimonial">⭐⭐⭐⭐⭐ خدمة احترافية وأسعار مناسبة</div>
 
-<a href="https://wa.me/96550720240?text=السلام عليكم اريد تصليح تكييف" class="whatsapp-big">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24">
-تواصل الآن عبر واتساب
-</a>
-</div>
+    </div>
 
-<!-- FLOAT -->
-<a href="https://wa.me/96550720240?text=السلام عليكم اريد تصليح تكييف" class="whatsapp">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="30">
-</a>
+    <!-- FINAL CTA -->
+    <div class="section">
+        <h2>لا تنتظر - اتصال الآن</h2>
+
+        <a href="https://wa.me/96550720240?text=السلام عليكم اريد تصليح تكييف" class="whatsapp-big">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24">
+            تواصل الآن عبر واتساب
+        </a>
+    </div>
+
+    <!-- FLOAT -->
+    <a href="https://wa.me/96550720240?text=السلام عليكم اريد تصليح تكييف" class="whatsapp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="30">
+    </a>
 
 </body>
+
 </html>
