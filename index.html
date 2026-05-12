@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>TechnoVolt | تركيب كاميرات مراقبة وانتركام وأقفال كهربائية</title>
 
-  <meta name="description" content="TechnoVolt لخدمات تركيب وصيانة كاميرات المراقبة، الانتركام، الأقفال الكهربائية، البوابات الكهربائية، وإصلاح أعطال الكهرباء. تواصل معنا عبر الواتساب أو الاتصال المباشر." />
+  <meta name="description"
+    content="TechnoVolt لخدمات تركيب وصيانة كاميرات المراقبة، الانتركام، الأقفال الكهربائية، البوابات الكهربائية، وإصلاح أعطال الكهرباء. تواصل معنا عبر الواتساب أو الاتصال المباشر." />
 
-  <meta name="keywords" content="تركيب كاميرات مراقبة, صيانة كاميرات مراقبة, تركيب انتركام, صيانة انتركام, أقفال كهربائية, بوابات كهربائية, فني كهرباء, إصلاح أعطال الكهرباء" />
+  <meta name="keywords"
+    content="تركيب كاميرات مراقبة, صيانة كاميرات مراقبة, تركيب انتركام, صيانة انتركام, أقفال كهربائية, بوابات كهربائية, فني كهرباء, إصلاح أعطال الكهرباء" />
 
   <meta property="og:title" content="TechnoVolt | أنظمة أمنية وكهرباء ذكية" />
-  <meta property="og:description" content="تركيب وصيانة كاميرات مراقبة، انتركام، أقفال كهربائية، بوابات كهربائية، وإصلاح أعطال الكهرباء." />
+  <meta property="og:description"
+    content="تركيب وصيانة كاميرات مراقبة، انتركام، أقفال كهربائية، بوابات كهربائية، وإصلاح أعطال الكهرباء." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://technovolt.online" />
 
@@ -42,13 +46,20 @@
 
   <header class="navbar">
     <div class="container nav-content">
-      <div class="brand">
-        <span class="logo">⚡</span>
+      <a href="#" class="brand" aria-label="TechnoVolt الرئيسية">
+        <img class="logo" src="images/logo.png" alt="الشعار" />
         <div>
           <h1>TechnoVolt</h1>
           <p>أنظمة أمنية وكهرباء ذكية</p>
         </div>
-      </div>
+      </a>
+
+      <nav class="nav-links" aria-label="روابط الموقع">
+        <a href="#services">الخدمات</a>
+        <a href="#gallery">أعمالنا</a>
+        <a href="#faq">الأسئلة</a>
+        <a href="#contact">تواصل</a>
+      </nav>
 
       <a href="#contact" class="nav-btn">اطلب الخدمة الآن</a>
     </div>
@@ -93,21 +104,33 @@
           </div>
         </div>
 
-        <div class="hero-card">
-          <h3>خدماتنا الأساسية</h3>
-          <ul>
-            <li>كاميرات مراقبة داخلية وخارجية</li>
-            <li>أنظمة انتركام صوت وصورة</li>
-            <li>أقفال أبواب كهربائية وذكية</li>
-            <li>ربط الأنظمة بالهاتف</li>
-            <li>بوابات كهربائية للمنازل والمنشآت</li>
-            <li>إصلاح أعطال الكهرباء</li>
-          </ul>
+        <div class="hero-card image-card">
+          <img src="images/cctv-installation.png" alt="تركيب كاميرات مراقبة للمنازل والشركات" />
+          <div class="hero-card-content">
+            <h3>تركيب احترافي لأنظمة الأمان</h3>
+            <ul>
+              <li>كاميرات مراقبة داخلية وخارجية</li>
+              <li>أنظمة انتركام صوت وصورة</li>
+              <li>أقفال أبواب كهربائية وذكية</li>
+              <li>ربط الأنظمة بالهاتف</li>
+              <li>بوابات كهربائية للمنازل والمنشآت</li>
+              <li>إصلاح أعطال الكهرباء</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="services section">
+    <section class="proof-strip">
+      <div class="container proof-grid">
+        <div>✅ تركيب نظيف ومنظم</div>
+        <div>✅ ربط بالهاتف</div>
+        <div>✅ دعم بعد التركيب</div>
+        <div>✅ خدمة للمنازل والشركات</div>
+      </div>
+    </section>
+
+    <section id="services" class="services section">
       <div class="container">
         <div class="section-title">
           <span>الخدمات</span>
@@ -116,49 +139,64 @@
         </div>
 
         <div class="cards">
-          <article class="card">
-            <div class="icon">📷</div>
-            <h3>تركيب وصيانة كاميرات المراقبة</h3>
-            <p>
-              تركيب كاميرات داخلية وخارجية، أنظمة DVR/NVR، مشاهدة عبر الهاتف،
-              وصيانة الأعطال وضعف الصورة وانقطاع التسجيل.
-            </p>
+          <article class="card service-card">
+            <img src="images/cctv-installation.png" alt="تركيب وصيانة كاميرات مراقبة" />
+            <div class="card-body">
+              <div class="icon">📷</div>
+              <h3>تركيب وصيانة كاميرات المراقبة</h3>
+              <p>
+                تركيب كاميرات داخلية وخارجية، أنظمة DVR/NVR، مشاهدة عبر الهاتف،
+                وصيانة الأعطال وضعف الصورة وانقطاع التسجيل.
+              </p>
+            </div>
           </article>
 
-          <article class="card">
-            <div class="icon">☎️</div>
-            <h3>تركيب وصيانة الانتركام</h3>
-            <p>
-              تركيب انتركام صوتي ومرئي للمنازل والعمارات والمكاتب مع صيانة الأعطال
-              وربط الأنظمة بالأبواب.
-            </p>
+          <article class="card service-card">
+            <img src="images/intercam.png" alt="تركيب وصيانة انتركام صوت وصورة" />
+            <div class="card-body">
+              <div class="icon">☎️</div>
+              <h3>تركيب وصيانة الانتركام</h3>
+              <p>
+                تركيب انتركام صوتي ومرئي للمنازل والعمارات والمكاتب مع صيانة الأعطال
+                وربط الأنظمة بالأبواب.
+              </p>
+            </div>
           </article>
 
-          <article class="card">
-            <div class="icon">🔐</div>
-            <h3>أقفال أبواب كهربائية وذكية</h3>
-            <p>
-              تركيب أقفال كهربائية وربطها بالهاتف والانتركام للتحكم في فتح وغلق الباب
-              بطريقة آمنة وسهلة.
-            </p>
+          <article class="card service-card">
+            <img src="images/smart-lock.png" alt="تركيب أقفال كهربائية وربطها بالهاتف" />
+            <div class="card-body">
+              <div class="icon">🔐</div>
+              <h3>أقفال أبواب كهربائية وذكية</h3>
+              <p>
+                تركيب أقفال كهربائية وربطها بالهاتف والانتركام للتحكم في فتح وغلق الباب
+                بطريقة آمنة وسهلة.
+              </p>
+            </div>
           </article>
 
-          <article class="card">
-            <div class="icon">🚪</div>
-            <h3>تركيب البوابات الكهربائية</h3>
-            <p>
-              تركيب وصيانة بوابات كهربائية للمنازل والفلل والمواقف مع أنظمة تحكم
-              ريموت أو هاتف حسب الحاجة.
-            </p>
+          <article class="card service-card">
+            <img src="images/electric-gate.png" alt="تركيب وصيانة بوابات كهربائية" />
+            <div class="card-body">
+              <div class="icon">🚪</div>
+              <h3>تركيب البوابات الكهربائية</h3>
+              <p>
+                تركيب وصيانة بوابات كهربائية للمنازل والفلل والمواقف مع أنظمة تحكم
+                ريموت أو هاتف حسب الحاجة.
+              </p>
+            </div>
           </article>
 
-          <article class="card">
-            <div class="icon">💡</div>
-            <h3>إصلاح أعطال الكهرباء</h3>
-            <p>
-              فحص وإصلاح الأعطال الكهربائية، القواطع، التمديدات، الإنارة،
-              ومشاكل انقطاع الكهرباء داخل المنازل والمنشآت.
-            </p>
+          <article class="card service-card">
+            <img src="images/electrician.png" alt="فني كهرباء لإصلاح الأعطال" />
+            <div class="card-body">
+              <div class="icon">💡</div>
+              <h3>إصلاح أعطال الكهرباء</h3>
+              <p>
+                فحص وإصلاح الأعطال الكهربائية، القواطع، التمديدات، الإنارة،
+                ومشاكل انقطاع الكهرباء داخل المنازل والمنشآت.
+              </p>
+            </div>
           </article>
 
           <article class="card highlighted">
@@ -169,6 +207,44 @@
               حسب المكان والميزانية.
             </p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section">
+      <div class="container">
+        <div class="section-title">
+          <span>من أعمالنا</span>
+          <h2>صور من التركيبات والصيانة</h2>
+          <p>
+            نماذج توضح جودة التنفيذ والتركيب المنظم لأنظمة الكاميرات والانتركام والكهرباء.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item large">
+            <img src="images/work-sample-1.png" alt="تركيب كاميرات مراقبة بشكل احترافي" />
+            <div>
+              <h3>تركيب كاميرات مراقبة</h3>
+              <p>توزيع مناسب للكاميرات وربطها بالمشاهدة عبر الهاتف.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/work-sample-2.png" alt="تركيب انتركام وقفل كهربائي" />
+            <div>
+              <h3>انتركام وقفل كهربائي</h3>
+              <p>ربط الباب بالانتركام لفتح آمن وسهل.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/electrician.png" alt="صيانة وتمديدات كهربائية" />
+            <div>
+              <h3>صيانة كهربائية</h3>
+              <p>فحص الأعطال وتنظيم التمديدات بشكل آمن.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -231,7 +307,7 @@
       </div>
     </section>
 
-    <section class="faq section">
+    <section id="faq" class="faq section">
       <div class="container">
         <div class="section-title">
           <span>أسئلة شائعة</span>
@@ -246,7 +322,8 @@
 
           <details>
             <summary>هل يمكن ربط القفل الكهربائي بالانتركام؟</summary>
-            <p>نعم، يمكن ربط القفل الكهربائي بالانتركام بحيث يتم فتح الباب من شاشة الانتركام أو من الهاتف حسب النظام المستخدم.</p>
+            <p>نعم، يمكن ربط القفل الكهربائي بالانتركام بحيث يتم فتح الباب من شاشة الانتركام أو من الهاتف حسب النظام
+              المستخدم.</p>
           </details>
 
           <details>
@@ -299,4 +376,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

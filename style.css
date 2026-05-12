@@ -32,6 +32,10 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: min(1120px, calc(100% - 32px));
   margin: auto;
@@ -61,14 +65,14 @@ a {
 }
 
 .logo {
-  width: 46px;
+  /* width: 46px; */
   height: 46px;
   display: grid;
   place-items: center;
-  border-radius: 14px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: #07111f;
-  font-size: 24px;
+  /* border-radius: 14px;
+  background: linear-gradient(135deg, var(--primary), var(--accent)); */
+  /* color: #07111f; */
+  /* font-size: 24px; */
 }
 
 .brand h1 {
@@ -80,6 +84,22 @@ a {
   margin: -4px 0 0;
   font-size: 13px;
   color: var(--muted);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.nav-links a {
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
 }
 
 .nav-btn {
@@ -202,8 +222,23 @@ a {
   background: rgba(17, 31, 51, 0.9);
   border: 1px solid var(--border);
   border-radius: 28px;
-  padding: 28px;
   box-shadow: var(--shadow);
+}
+
+.image-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.image-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-card-content {
+  padding: 28px;
 }
 
 .hero-card h3 {
@@ -225,6 +260,22 @@ a {
 
 .hero-card li:last-child {
   border-bottom: 0;
+}
+
+.proof-strip {
+  padding: 18px 0;
+  background: rgba(22, 209, 154, 0.08);
+  border-top: 1px solid rgba(22, 209, 154, 0.16);
+  border-bottom: 1px solid rgba(22, 209, 154, 0.16);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  text-align: center;
+  color: var(--text);
+  font-weight: 700;
 }
 
 .section {
@@ -269,6 +320,22 @@ a {
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
 }
 
+.service-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.service-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 24px;
+}
+
 .card.highlighted {
   background: linear-gradient(135deg, rgba(22, 209, 154, 0.16), rgba(246, 179, 67, 0.12));
 }
@@ -292,6 +359,69 @@ a {
 
 .card p,
 .feature p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.gallery {
+  background: var(--bg-soft);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+}
+
+.gallery-item {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+  border-radius: 26px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.gallery-item.large {
+  grid-row: span 2;
+  min-height: 580px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(7, 17, 31, 0.92), rgba(7, 17, 31, 0.08));
+}
+
+.gallery-item div {
+  position: absolute;
+  right: 24px;
+  left: 24px;
+  bottom: 24px;
+  z-index: 2;
+}
+
+.gallery-item h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.gallery-item p {
   margin: 0;
   color: var(--muted);
 }
@@ -392,10 +522,18 @@ details p {
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
 }
 
+@media (max-width: 1000px) {
+  .nav-links {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
+
   .hero-grid,
   .why-grid,
-  .contact-box {
+  .contact-box,
+  .gallery-grid {
     grid-template-columns: 1fr;
   }
 
@@ -405,6 +543,18 @@ details p {
 
   .contact-actions {
     margin-top: 0;
+  }
+
+  .gallery-item.large {
+    min-height: 340px;
+  }
+
+  .gallery-item {
+    min-height: 300px;
+  }
+
+  .proof-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -427,8 +577,33 @@ details p {
     width: 100%;
   }
 
+  .image-card img {
+    height: 220px;
+  }
+
+  .service-card img {
+    height: 170px;
+  }
+
+  .gallery-item,
+  .gallery-item.large {
+    min-height: 260px;
+  }
+
   .footer-content {
     display: block;
     text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-whatsapp {
+    left: 14px;
+    bottom: 14px;
+    padding: 12px 16px;
   }
 }

@@ -1,4 +1,4 @@
-const phone = "96567078820";
+const phone = "96550720240";
 
 const message = encodeURIComponent(
   "مرحبًا TechnoVolt، أريد الاستفسار عن خدمة تركيب/صيانة. من فضلك تواصلوا معي."
